@@ -3,7 +3,7 @@ body {
 }
 .searchContainer {
   width: 40%;
-  margin: 1.5% auto;
+  margin: 0.5% auto;
   display: flex;
   flex-direction: column;
 }
@@ -41,8 +41,12 @@ body {
 
 .image {
   border-radius: 10px;
-  border: 5px solid gold;
+  border: 3px solid gold;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+.image:hover {
+  transform: scale(1.1);
 }
 .detail {
   width: 60%;

@@ -40,9 +40,9 @@ export const Search = ({ onCompleteCallBack }) => {
     setActors(data.Actors);
     setPlot(data.Plot);
     setGet(true);
+    console.log(data);
     setImdb(data.Ratings[0].Value);
     setRt(data.Ratings[1].Value);
-    console.log(data);
   };
   return (
     <>
@@ -54,6 +54,7 @@ export const Search = ({ onCompleteCallBack }) => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
+
       <div className={styles.content}>
         <div>
           <Poster image={poster} />
@@ -73,6 +74,7 @@ export const Search = ({ onCompleteCallBack }) => {
           ) : null}
         </div>
       </div>
+
       <div>
         <BackgroundSlider
           images={[image1, image2, image3, image4, image5]}
