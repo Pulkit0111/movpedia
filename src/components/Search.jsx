@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Poster } from "./Poster";
 import { Detail } from "./Detail";
+import { About } from "./About";
 import styles from "../Style.module.css";
 import BackgroundSlider from "react-background-slider";
 import image1 from "../images/image1.jpg";
@@ -59,8 +60,8 @@ export const Search = ({ onCompleteCallBack }) => {
         <div>
           <Poster image={poster} />
         </div>
-        <div className={get ? styles.detail : null}>
-          {get ? (
+        {get ? (
+          <div className={get ? styles.detail : null}>
             <Detail
               title={title}
               release={released}
@@ -71,8 +72,12 @@ export const Search = ({ onCompleteCallBack }) => {
               imdb={imdb}
               rt={rt}
             />
-          ) : null}
-        </div>
+          </div>
+        ) : (
+          <div className={styles.home}>
+            <About />
+          </div>
+        )}
       </div>
 
       <div>

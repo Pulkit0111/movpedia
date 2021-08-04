@@ -60,3 +60,20 @@ span {
   font-style: oblique;
   font-family: cursive;
 }
+
+.home {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1% 2%;
+  border: 10px solid black;
+  border-radius: 20px;
+  margin: 1.5% auto;
+  font-size: 20px;
+  font-family: fantasy;
+  text-align: center;
+}
+.gif {
+  width: 30%;
+  border: 5px solid gold;
+  border-radius: 50%;
+}
