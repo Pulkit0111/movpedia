@@ -31,7 +31,7 @@ export const Search = ({ onCompleteCallBack }) => {
 
   const handleSearch = async () => {
     let { data } = await axios.get(
-      `http://www.omdbapi.com/?apikey=4f9513ae&t=${name}`
+      `https://www.omdbapi.com/?apikey=4f9513ae&t=${name}`
     );
     setPoster(data.Poster);
     setTitle(data.Title);
