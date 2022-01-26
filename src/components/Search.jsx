@@ -45,12 +45,20 @@ export const Search = ({ onCompleteCallBack }) => {
     setImdb(data.Ratings[0].Value);
     setRt(data.Ratings[1].Value);
   };
+
+  const onEnter=(event)=>{
+    if(event.key==="Enter"){
+      // console.log("Enter Pressed here")
+      handleSearch();
+    }
+  }
   return (
     <>
       <div className={styles.searchContainer}>
         <input
           type="text"
           onChange={handleChange}
+          onKeyPress={onEnter}
           placeholder="Search for a movie..."
         />
         <button onClick={handleSearch}>Search</button>

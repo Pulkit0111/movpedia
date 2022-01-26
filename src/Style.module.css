@@ -3,7 +3,7 @@ body {
 }
 .searchContainer {
   width: 40%;
-  margin: 0.5% auto;
+  margin: 2.5% auto;
   display: flex;
   flex-direction: column;
 }
@@ -30,12 +30,11 @@ body {
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.8);
 }
 .content {
-  width: 90%;
-  margin-top: 0%;
-  margin: auto;
+  width: 80%;
+  margin: 5% auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   cursor: pointer;
 }
 
@@ -46,10 +45,10 @@ body {
   transition: transform 0.2s;
 }
 .image:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .detail {
-  width: 60%;
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 1.5% 5%;
   border: 10px solid black;
